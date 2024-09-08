@@ -1,8 +1,18 @@
-s
-s
-s
-s
-s
-s
-
-s
+spark-submit
+--master yarn
+--deploy-mode cluster
+--name my_pyspark_job
+--num-executors 4
+--executor-memory 4G
+--executor-cores 2
+--driver-memory 2G
+--conf spark.dynamicAllocation.enabled=true
+--conf spark.shuffle.service.enabled=true
+--conf spark.speculation=true
+--conf spark.executor.memoryOverhead=512M
+--files hdfs:///path/to/my_config_file.conf
+--py-files my_dependencies.zip
+--jars hdfs:///path/to/jar/my_jar_dependency.jar
+s3a://my-bucket/pyspark_jobs/my_pyspark_job.py
+--input s3a://my-bucket/input_data/
+--output s3a://my-bucket/output_data/
