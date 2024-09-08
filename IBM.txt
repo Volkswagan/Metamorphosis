@@ -136,4 +136,34 @@ UNION ALL
 SELECT Year, 'Furniture' AS Category, Furniture AS Sales
 FROM CategorySales;
 ---------------------------------------------------------------------------------------------
+SCD Type 1:
+-- Load new or updated records from source_table into target_table
+MERGE `project_id.dataset_id.target_table` AS target
+USING `project_id.dataset_id.source_table` AS source
+ON target.id = source.id
+WHEN MATCHED THEN
+  UPDATE SET
+    target.name = source.name
+WHEN NOT MATCHED THEN
+  INSERT (id, name)
+  VALUES (source.id, source.name);
+------------------------------------------------------------------------------------------------
+SCD Type 2:
+-- Step 1: Mark existing records as historical if they have been updated
+UPDATE `project_id.dataset_id.target_table` AS target
+SET effective_end_date = CURRENT_DATE() - INTERVAL 1 DAY,
+    current_flag = 'N'
+WHERE target.id IN (
+  SELECT id
+  FROM `project_id.dataset_id.source_table` AS source
+  WHERE source.updated_at > target.effective_start_date
+) AND target.current_flag = 'Y';
+
+-- Step 2: Insert new records into target_table, including historical records
+MERGE `project_id.dataset_id.target_table` AS target
+USING `project_id.dataset_id.source_table` AS source
+ON target.id = source.id AND target.current_flag = 'Y'
+WHEN NOT MATCHED THEN
+  INSERT (id, name, effective_start_date, effective_end_date, current_flag)
+  VALUES (source.id, source.name, CURRENT_DATE(), NULL, 'Y');
 
