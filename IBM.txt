@@ -16,3 +16,124 @@ spark-submit
 s3a://my-bucket/pyspark_jobs/my_pyspark_job.py
 --input s3a://my-bucket/input_data/
 --output s3a://my-bucket/output_data/
+--------------------------------------------------------------------------------------
+-- Create a sample sales_data table
+CREATE OR REPLACE TABLE `project_id.dataset_id.sales_data` (
+    product_id STRING,
+    category STRING,
+    amount FLOAT64
+);
+-- Create a table to store the result of the transformation
+CREATE OR REPLACE TABLE `project_id.dataset_id.category_sales` (
+    category STRING,
+    total_sales FLOAT64
+);
+
+CREATE OR REPLACE PROCEDURE `project_id.dataset_id.sp_aggregate_sales`()
+BEGIN
+  -- Aggregate total sales by category
+  INSERT INTO `project_id.dataset_id.category_sales` (category, total_sales)
+  SELECT
+    category,
+    SUM(amount) AS total_sales
+  FROM
+    `project_id.dataset_id.sales_data`
+  GROUP BY
+    category;
+END;
+-- Execute the stored procedure
+CALL `project_id.dataset_id.sp_aggregate_sales`();
+-------------------------------------------------------------------------------------------
+CREATE OR REPLACE PROCEDURE `project_id.dataset_id.sp_calculate_total_sales`(
+    IN category_input STRING,
+    IN min_sales_threshold INT64,
+    OUT result_message STRING
+)
+BEGIN
+  DECLARE total_sales INT64 DEFAULT 0;
+  DECLARE sales_count INT64 DEFAULT 0;
+  DECLARE current_year INT64 DEFAULT 2021;
+  DECLARE year_limit INT64 DEFAULT 2022;
+  DECLARE record_sales INT64;
+  
+  -- Loop over each year to calculate total sales for the given category
+  FOR year IN
+    (SELECT DISTINCT Year FROM `project_id.dataset_id.SalesData` ORDER BY Year)
+  DO
+    -- Calculate sales for the given year and category
+    SET record_sales = (
+      SELECT SUM(Sales) 
+      FROM `project_id.dataset_id.SalesData` 
+      WHERE Category = category_input AND Year = year.Year
+    );
+    
+    -- If no sales data is found, set sales to 0
+    SET record_sales = IFNULL(record_sales, 0);
+    
+    -- Increment the total sales
+    SET total_sales = total_sales + record_sales;
+    -- Sales count for the given category and year
+    SET sales_count = sales_count + 1;
+    -- Log the current year's sales
+    RAISE INFO 'Year: %, Category: %, Sales: %', year.Year, category_input, record_sales;
+  END FOR;
+
+  -- Raise an exception if sales are less than the threshold
+  IF total_sales < min_sales_threshold THEN
+    RAISE EXCEPTION 'Total sales for category % are below the threshold. Total: %, Threshold: %', category_input, total_sales, min_sales_threshold;
+  END IF;
+
+  -- Case to handle different messages based on total sales
+  SET result_message = CASE
+    WHEN total_sales > min_sales_threshold THEN 'Success: Sales exceed the threshold.'
+    WHEN total_sales = min_sales_threshold THEN 'Sales exactly match the threshold.'
+    ELSE 'Failure: Sales below threshold.'
+  END;
+
+  -- WHILE loop to simulate some operation (e.g., validating total sales)
+  WHILE current_year <= year_limit DO
+    RAISE INFO 'Processing data for year %', current_year;
+    SET current_year = current_year + 1;
+  END WHILE;
+END;
+CALL `project_id.dataset_id.sp_calculate_total_sales`('Electronics', 1000, @result_message);
+------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------
+Pivot:
+SELECT 'Year', 'Electronics', 'Clothing', 'Furniture'
+FROM 
+    (SELECT Year, Category, Sales FROM SalesData) AS SourceTable
+PIVOT
+(
+    SUM(Sales) 
+    FOR Category IN ('Electronics', 'Clothing', 'Furniture')
+) AS PivotTable;
+
+SELECT Year,
+    SUM(CASE WHEN Category = 'Electronics' THEN Sales ELSE 0 END) AS Electronics,
+    SUM(CASE WHEN Category = 'Clothing' THEN Sales ELSE 0 END) AS Clothing,
+    SUM(CASE WHEN Category = 'Furniture' THEN Sales ELSE 0 END) AS Furniture
+FROM
+    SalesData
+GROUP BY
+    Year;
+
+Unpivot:
+SELECT Year, Category, COALESCE(Sales, 0) AS Sales
+FROM CategorySales
+UNPIVOT 
+(
+    Sales FOR Category IN ([Electronics], [Clothing], [Furniture])
+) AS UnpivotedData;
+
+SELECT Year, 'Electronics' AS Category, Electronics AS Sales
+FROM CategorySales
+UNION ALL
+SELECT Year, 'Clothing' AS Category, Clothing AS Sales
+FROM CategorySales
+UNION ALL
+SELECT Year, 'Furniture' AS Category, Furniture AS Sales
+FROM CategorySales;
+---------------------------------------------------------------------------------------------
+
