@@ -17,4 +17,29 @@
     print(-9.0 / 2) # -4.5
     print(-9.0 // 2)  # -5.0 (floors towards the lesser integer)
     ```
+15. one-liners:
+     ```python
+     reversed_string = string[::-1]
+     is_palindrome = string == string[::-1]
+     reversed_list = my_list[::-1]
+     last_element = my_list[-1]
+     first_n_elements = my_list[:n]
+     max_value = max(my_list)
+     max_index = my_list.index(max(my_list))
+     a, b = b, a #swapping
+     intersection = list(set(list1) & set(list2))
+     all_unique = len(my_list) == len(set(my_list))
+     is_empty = not my_list
+     most_frequent_in_a_list = max(set(my_list), key=my_list.count)
+     even_numbers = list(range(0, n+1, 2)) #Create a List of Even Numbers up to a Given Number
+     has_odd = any(x % 2 != 0 for x in my_list)
+     single_integer = int(''.join(map(str, my_list))) #Convert a List of Integers to a Single Integer
+     merged_dict = {**dict1, **dict2}
+     transposed_matrix = list(zip(*matrix))
+     no_whitespace = my_string.strip()
+
+     #Count Occurrences of Each Element in a List
+     from collections import Counter
+     counts = Counter(my_list)
+    ```
     
