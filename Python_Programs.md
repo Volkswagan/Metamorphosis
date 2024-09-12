@@ -75,8 +75,7 @@ if __name__ == '__main__':
 	if len(sys.argv) != 2:
 		print("Usage: python pipeline.py <input_file>")
     	else:
-        	input_file = sys.argv[1]
-        	count_words_in_file(input_file)
-    		data_pipeline(input_file,)
+        	file_path = sys.argv[1]
+    		data_pipeline(file_path)
 
 ```
