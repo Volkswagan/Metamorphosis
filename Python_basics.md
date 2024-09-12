@@ -22,6 +22,7 @@
      reversed_string = string[::-1]
      is_palindrome = string == string[::-1]
      reversed_list = my_list[::-1]
+     last_char = my_string[-1]
      last_element = my_list[-1]
      first_n_elements = my_list[:n]
      max_value = max(my_list)
