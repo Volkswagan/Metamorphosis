@@ -80,6 +80,22 @@ def binary_search(self, nums: List[int], target: int) -> int:
                 return m
         return -1
 
+def binarySearchSqrt(x):
+    if x == 0 or x == 1:
+        return x
+    low, high = 0, x
+    result = 0
+    while low <= high:
+        mid = (low + high) // 2
+        if mid * mid == x:
+            return mid
+        elif mid * mid < x:
+            low = mid + 1
+            result = mid
+        else:
+            high = mid - 1
+    return result
+
 def isValid(self, s: str) -> bool:
         Map = {")": "(", "]": "[", "}": "{"}
         stack = []
@@ -92,9 +108,71 @@ def isValid(self, s: str) -> bool:
             stack.pop()
         return not stack
 
+def findPeakElement(nums):
+    left, right = 0, len(nums) - 1
+    while left < right:
+        mid = (left + right) // 2
+        if nums[mid] < nums[mid + 1]:
+            left = mid + 1
+        else:
+            right = mid
+    return left
 
+def findLeaders(arr):
+    leaders = []
+    max_from_right = arr[-1]
+    leaders.append(max_from_right)
+    for i in range(len(arr) - 2, -1, -1):
+        if arr[i] > max_from_right:
+            leaders.append(arr[i])
+            max_from_right = arr[i]
+    return leaders[::-1]
 
+def rotateMatrix90(matrix):
+    n = len(matrix)
+    # Transpose the matrix
+    for i in range(n):
+        for j in range(i, n):
+            matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]
+    # Reverse each row
+    for i in range(n):
+        matrix[i].reverse()
+    return matrix
 
+def unionOfSortedArrays(arr1, arr2):
+    i, j = 0, 0
+    union = []
+    while i < len(arr1) and j < len(arr2):
+        if arr1[i] < arr2[j]:
+            union.append(arr1[i])
+            i += 1
+        elif arr1[i] > arr2[j]:
+            union.append(arr2[j])
+            j += 1
+        else:
+            union.append(arr1[i])
+            i += 1
+            j += 1
+    # Add remaining elements from arr1 or arr2
+    while i < len(arr1):
+        union.append(arr1[i])
+        i += 1
+    while j < len(arr2):
+        union.append(arr2[j])
+        j += 1
+    return union
+def rotateArray(nums, k):
+    n = len(nums)
+    k = k % n  # In case k > n
+    nums[:] = nums[-k:] + nums[:-k]
+    return nums
+
+def kthSmallest(nums, k):
+    nums.sort()
+    return nums[k-1]
+def kthLargest(nums, k):
+    nums.sort(reverse=True)
+    return nums[k-1]
 
 
 
