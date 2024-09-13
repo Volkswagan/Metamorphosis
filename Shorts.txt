@@ -1,0 +1,37 @@
+"Number of stages = number of wide transformation + 1 [N + 1 stages:
+1 initial stage: All operations before the first wide transformation.
+N stages for N wide transformations: Each shuffle caused by a wide transformation starts a new stage.]"
+In narrow transformation, the number of partitions, before and after a transformation remains the same only.
+If we have 15 partitions, then it will create a total of 16 tasks, 1 for Driver and 1 for each partitions.
+OLAP -> Denormalized. Star and Snowflake Schema
+OLTP -> Normalized, None
+Caching = Storing Data on-heap [On-heap = This is the memory allocated within the Java Virtual Machine (JVM) heap space.], df.cache() = df.persist(StorageLevel.MEMORY_ONLY)
+A stage represents a set of tasks that can be executed together without requiring a shuffle.
+Logical units in the worker node which we call executor
+Number of jobs = 1, stages = 3, tasks = 16 (2048/128) for 2 wide transformation, 1 action on 2 GB data
+orderby or sort and all of the aggregated fucntion does not run in parallel
+api does not return multiline json, it only returns single line json and it does not require json flattening
+Sudden data volume gain on persist(StorageLevel.MEMORY_ONLY), this will first cache as much as possible and for uncached data, it will recompute
+Sort-Merge Join = Two datasets are very large or the dataset is already sorted or high cardinality join keys.
+Shuffle-Hash Join = Two moderate-sized datasets, unsorted data, and when you want to avoid the overhead of sorting but cannot broadcast due to memory or data size constraints.
+Broadcast Join = One dataset is very big and other one is small
+Databricks runtime version = 13.3 LTS, Spark 3.0, Python 3
+Before Spark 2.2 there was RBO, after that we have CBO
+Spark submit -> driver -> creates lineage graph -> action is called -> lineage to execution plan -> worker nodes -> logical units in the worker node which we call executor (jvm with on-heap memory + cores),  executes the tasks
+To remove cache data, we need to use the command unpersist()
+"By default, Spark uses hash partitioning Joins: When performing a join operation, Spark will hash the join keys to partition the data across different nodes.
+GroupBy: When aggregating data by grouping, Spark uses hash partitioning to ensure that all records with the same key end up in the same partition."
+"Range Partitioning: For certain operations, you might want to use range partitioning instead of hash partitioning. Range partitioning can be specified using methods like repartition() or partitionBy() on DataFrames, which allows you to define how data should be split into partitions based on a range of values.
+# Example of repartitioning with a specified number of partitions
+df_repartitioned = df.repartition(10)
+# Example of range partitioning for a specific column
+df_partitioned = df.partitionBy('column_name')"
+checkpoint always stores the intermediate stage in the disk.
+"Parquet (Column Based) [WORM]-> OLAP -> denormalized
+AVRO (Row Based) [stores schema in JSON]-> OLTP -> normalized
+Snappy (less cpu intensive, hence better in querying) -> splitable file format
+Gzip (better compression, hence good for storage) -> non-splitable file format"
+"RDD only use on-heap memory but in DF/DS we have freedom to choose on-heap or off-heap memory to minimize the GC.
+spark.conf.set(""""spark.memory.offHeap.enabled"""", """"true"""")
+spark.conf.set(""""spark.memory.offHeap.size"""", """"2g"""") "
+Spark creates a DAG (Directed Acyclic Graph) of stages and tasks. The driver schedules tasks and distributes them across executors. Executors perform the tasks, shuffle data if needed, and return results.
