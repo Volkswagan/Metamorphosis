@@ -32,7 +32,6 @@ def maxSubArray(nums):
 
 def dutchNationalFlag(nums):
     low, mid, high = 0, 0, len(nums) - 1
-
     while mid <= high:
         if nums[mid] == 0:
             nums[low], nums[mid] = nums[mid], nums[low]
@@ -47,15 +46,51 @@ def dutchNationalFlag(nums):
 def moveZeroes(nums):
     # Pointer for the position of the next non-zero element
     non_zero_index = 0
-
     # Traverse the array and move non-zero elements to the front
     for i in range(len(nums)):
         if nums[i] != 0:
             nums[non_zero_index], nums[i] = nums[i], nums[non_zero_index]
             non_zero_index += 1
 
+def isPalindrome(self, s: str) -> bool:
+        new = ''
+        for a in s:
+            if a.isalpha() or a.isdigit():
+                new += a.lower()
+        return (new == new[::-1])
 
+def best_time_buy_sell(self, prices: List[int]) -> int:
+        res = 0
+        lowest = prices[0]
+        for price in prices:
+            if price < lowest:
+                lowest = price
+            res = max(res, price - lowest)
+        return res
 
+def binary_search(self, nums: List[int], target: int) -> int:
+        l, r = 0, len(nums) - 1
+        while l <= r:
+            m = l + ((r - l) // 2)  # (l + r) // 2 can lead to overflow
+            if nums[m] > target:
+                r = m - 1
+            elif nums[m] < target:
+                l = m + 1
+            else:
+                return m
+        return -1
+
+def isValid(self, s: str) -> bool:
+        Map = {")": "(", "]": "[", "}": "{"}
+        stack = []
+        for c in s:
+            if c not in Map:
+                stack.append(c)
+                continue
+            if not stack or stack[-1] != Map[c]:
+                return False
+            stack.pop()
+        return not stack
 
 
 
