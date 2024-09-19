@@ -94,10 +94,26 @@ select col1,col2 where col2 ='Developer'
 insert into table manager_tab 
 select col1,col2 where col2='Mgr';
 
---ACID Tables: Ensure that your Hive table supports ACID transactions. This usually requires the table to be stored in ORC format with transactions enabled.
+--ACID Tables: Ensure that your Hive table supports ACID transactions. This requires the table is internal only, to be stored in ORC format with transactions enabled.
+
 --Hive Configuration: You need to configure Hive to support transactions:
---Set hive.txn.manager to org.apache.hadoop.hive.ql.lockmgr.DbTxnManager in the Hive configuration.
---Enable hive.support.concurrency and hive.enforce.bucketing properties.
+--Set hive.txn.manager = org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
+--Set hive.support.concurrency = true
+-- Set hive.enforce.bucketing = true
+--Set hive.exec.dynamic.partition.mode = nonstrict
+--Enable hive.support.concurrency
+==Enable hive.enforce.bucketing properties.
+
+CREATE TABLE database_name.table_name (
+    column1 STRING,
+    column2 INT
+)
+CLUSTERED BY (column2) INTO 5 BUCKETS
+STORED AS ORC
+TBLPROPERTIES (
+    'transactional'='true',
+    'transactional_properties'='insert_only' -- Optional, 'insert_only' allows only inserts
+);
 
 --not this
 DELETE FROM sales_data
