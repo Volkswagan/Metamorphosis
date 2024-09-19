@@ -115,7 +115,7 @@ select col1,col2 where col2='Mgr';
 -- Set hive.enforce.bucketing = true
 --Set hive.exec.dynamic.partition.mode = nonstrict
 --Enable hive.support.concurrency
-==Enable hive.enforce.bucketing properties.
+--Enable hive.enforce.bucketing properties.
 
 CREATE TABLE database_name.table_name (
     column1 STRING,
