@@ -42,9 +42,23 @@
 - **Use Partitioning** when:
   - Queries filter frequently on specific columns (e.g., date ranges).
   - Reducing scan time is critical.
+  - low cardinality
 - **Use Bucketing** when:
   - Joins need to be optimized across large datasets.
   - You want to avoid too many small partitions (too many small files).
+  - high cardinality
+    
+CREATE TABLE sales_part_bucketed (product_id INT, sale_amount DECIMAL(10, 2)) 
+PARTITIONED BY (sale_date STRING) CLUSTERED BY (product_id) INTO 10 BUCKETS
+STORED AS PARQUET;
+-- Load data into the table with both partitioning and bucketing
+LOAD DATA INPATH '/data/sales_data' INTO TABLE sales_part_bucketed PARTITION (sale_date='2024-09-19');
+
+df.write.partitionBy('sale_date').bucketBy(10, 'product_id').sortBy('product_id').format('parquet').mode('overwrite') \
+    	.save('/path/to/output/directory')
+
+  1. Partitioning comes first because it is the most granular way to prune data. The engine can ignore entire folders (partitions) that do not match the query, significantly reducing the amount of data read. Bucketing comes second because it operates within each partition. Use both to avoid too many small partitions (over-partitioning) and too few large partitions (under-partitioning), ensuring even distribution of data within partitions.
+  2. 
 
 ---
 
@@ -94,9 +108,8 @@ select col1,col2 where col2 ='Developer'
 insert into table manager_tab 
 select col1,col2 where col2='Mgr';
 
---ACID Tables: Ensure that your Hive table supports ACID transactions. This requires the table is internal only, to be stored in ORC format with transactions enabled.
+--ACID Tables: 1. Internal 2. ORC 3. Bucketed 4. Transaction = true
 
---Hive Configuration: You need to configure Hive to support transactions:
 --Set hive.txn.manager = org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
 --Set hive.support.concurrency = true
 -- Set hive.enforce.bucketing = true
