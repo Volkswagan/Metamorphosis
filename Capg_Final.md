@@ -93,3 +93,8 @@ The key differences between **MapReduce** and **Spark** primarily revolve around
 | **Type**          | Query optimization engine                  | Execution engine                            |
 | **Purpose**       | Optimizes query plans                      | Focuses on **vectorized execution**        |
 | **Use Case**      | Enhances performance by optimizing logical plans | Provides high-performance execution for DataFrames |
+
+1. Analysis Phase: Checks for syntax errors and resolves column names and types.
+2. Logical Optimization Phase: Simplifies expressions and pushes filters down to reduce the amount of data processed.
+3. Physical Planning Phase: Generates multiple physical plans for the logical query and chooses the best physical plan based on CBO
+4. Code Generation Phase: Generates Java bytecode for the selected physical plan.
