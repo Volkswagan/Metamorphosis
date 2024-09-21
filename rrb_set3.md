@@ -241,59 +241,177 @@ I’ve compiled some of the most probable and frequently asked topics from past 
 
 ---
 
+### 31. **Which of the following is the most appropriate initial management for anaphylactic shock?**  
+   - A) IV hydrocortisone  
+   - B) IM adrenaline (epinephrine)  
+   - C) IV fluids  
+   - D) Oral antihistamines  
+
+---
+
+### 32. **What is the recommended method for immediate resuscitation in a newborn with severe respiratory depression?**  
+   - A) Chest compressions  
+   - B) Positive pressure ventilation (PPV)  
+   - C) Intubation  
+   - D) Nasopharyngeal suctioning  
+
+---
+
+### 33. **A 30-year-old male with a history of IV drug abuse presents with fever, malaise, and new-onset heart murmur. Blood cultures are positive for Streptococcus viridans. What is the most likely diagnosis?**  
+   - A) Myocarditis  
+   - B) Endocarditis  
+   - C) Pericarditis  
+   - D) Rheumatic fever  
+
+---
+
+### 34. **Which of the following electrolyte imbalances is commonly associated with increased risk of digoxin toxicity?**  
+   - A) Hyperkalemia  
+   - B) Hypokalemia  
+   - C) Hypercalcemia  
+   - D) Hyponatremia  
+
+---
+
+### 35. **A 55-year-old woman with a history of hypertension presents with sudden severe headache, vomiting, and neck stiffness. A CT scan shows blood in the subarachnoid space. What is the most likely cause?**  
+   - A) Subdural hematoma  
+   - B) Intracerebral hemorrhage  
+   - C) Ischemic stroke  
+   - D) Ruptured aneurysm  
+
+---
+
+### 36. **Which of the following features is most indicative of nephrotic syndrome?**  
+   - A) Hematuria  
+   - B) Proteinuria > 3.5 g/day  
+   - C) Hypertension  
+   - D) Elevated creatinine  
+
+---
+
+### 37. **In a patient with suspected meningitis, which of the following findings on cerebrospinal fluid (CSF) analysis is most suggestive of bacterial meningitis?**  
+   - A) Low protein, high glucose  
+   - B) High protein, low glucose  
+   - C) Normal protein, high glucose  
+   - D) Low protein, low glucose  
+
+---
+
+### 38. **A patient is diagnosed with myocardial infarction (MI) and is prescribed aspirin, clopidogrel, and atorvastatin. Which of the following is the primary reason for using clopidogrel in this context?**  
+   - A) To lower cholesterol levels  
+   - B) To prevent platelet aggregation  
+   - C) To reduce blood pressure  
+   - D) To prevent ventricular arrhythmias  
+
+---
+
+### 39. **A 25-year-old woman presents with malar rash, joint pain, and photosensitivity. Laboratory tests reveal positive antinuclear antibodies (ANA) and anti-dsDNA. What is the most likely diagnosis?**  
+   - A) Rheumatoid arthritis  
+   - B) Systemic lupus erythematosus (SLE)  
+   - C) Psoriasis  
+   - D) Dermatomyositis  
+
+---
+
+### 40. **Which of the following vaccines is most commonly associated with the prevention of cervical cancer?**  
+   - A) Hepatitis B vaccine  
+   - B) Human papillomavirus (HPV) vaccine  
+   - C) Measles, mumps, and rubella (MMR) vaccine  
+   - D) Influenza vaccine  
+
+---
+
+### 41. **A pregnant woman is diagnosed with gestational diabetes. Which of the following interventions is most appropriate to initiate as the first step in management?**  
+   - A) Insulin therapy  
+   - B) Oral hypoglycemics  
+   - C) Dietary modifications and exercise  
+   - D) Bed rest  
+
+---
+
+### 42. **A 60-year-old male presents with sudden loss of vision in his left eye, described as a “curtain falling over the eye,” but no pain. What is the most likely diagnosis?**  
+   - A) Retinal detachment  
+   - B) Acute angle-closure glaucoma  
+   - C) Optic neuritis  
+   - D) Central retinal vein occlusion  
+
+---
+
+### 43. **Which of the following clinical features is most characteristic of diabetic ketoacidosis (DKA)?**  
+   - A) Hypoglycemia and polyuria  
+   - B) Hyperglycemia, ketonuria, and metabolic acidosis  
+   - C) Hyperglycemia with normal anion gap  
+   - D) Hyponatremia and hyperkalemia  
+
+---
+
+### 44. **Which of the following signs is associated with hypocalcemia and is elicited by tapping on the facial nerve, causing facial muscle twitching?**  
+   - A) Chvostek’s sign  
+   - B) Trousseau’s sign  
+   - C) Kernig’s sign  
+   - D) Brudzinski’s sign  
+
+---
+
+### 45. **A 5-year-old child presents with a barking cough, stridor, and respiratory distress. What is the most likely diagnosis?**  
+   - A) Croup  
+   - B) Epiglottitis  
+   - C) Asthma  
+   - D) Bronchiolitis  
+
 ### Answers and Explanations:
 
-1. **B) Aortic dissection; initiate IV beta-blockers and prepare for surgery**  
+**1. B) Aortic dissection; initiate IV beta-blockers and prepare for surgery**  
    *Explanation*: Sudden chest pain with a differential in blood pressure between arms suggests aortic dissection, which requires beta-blockers to reduce shear forces and surgery.
 
-2. **A) Primary syphilis; benzathine penicillin G**  
+**2. A) Primary syphilis; benzathine penicillin G**  
    *Explanation*: A painless ulcer with positive VDRL indicates primary syphilis, which is treated with benzathine penicillin G.
 
-3. **A) Administer magnesium sulfate and induce labor**  
+**3. A) Administer magnesium sulfate and induce labor**  
    *Explanation*: Severe preeclampsia at 34 weeks requires magnesium sulfate to prevent seizures and prompt delivery to prevent maternal and fetal complications.
 
-4. **C) ACE inhibitors**  
+**4. C) ACE inhibitors**  
    *Explanation*: ACE inhibitors improve survival in heart failure patients by reducing afterload and preventing cardiac remodeling.
 
-5. **C) Piperacillin-tazobactam and ciprofloxacin**  
+**5. C) Piperacillin-tazobactam and ciprofloxacin**  
    *Explanation*: Pseudomonas infections in neutropenic patients are treated with broad-spectrum antibiotics like piperacillin-tazobactam and ciprofloxacin.
 
-6. **B) Wernicke’s encephalopathy**  
+**6. B) Wernicke’s encephalopathy**  
    *Explanation*: Confusion, ophthalmoplegia, and ataxia are classic symptoms of Wernicke’s encephalopathy, which responds to thiamine administration.
 
-7. **C) Secure the airway in the operating room**  
+**7. C) Secure the airway in the operating room**  
    *Explanation*: The tripod position and stridor in a child suggest epiglottitis, a life-threatening condition that requires immediate airway management.
 
 
-8. **A) Administer IV calcium gluconate**  
+**8. A) Administer IV calcium gluconate**  
    *Explanation*: In hyperkalemia with ECG changes, IV calcium gluconate is given to stabilize the cardiac membrane, reducing the risk of life-threatening arrhythmias. Insulin and glucose may follow to lower serum potassium.
 
 
-9. **B) Subarachnoid hemorrhage; perform lumbar puncture**  
+**9. B) Subarachnoid hemorrhage; perform lumbar puncture**  
    *Explanation*: A severe headache with normal CT suggests a subarachnoid hemorrhage (SAH). A lumbar puncture is the next step to check for xanthochromia (blood breakdown products), which confirms SAH.
 
 
-10. **A) Acute hepatitis A; supportive care**  
+**10. A) Acute hepatitis A; supportive care**  
    *Explanation*: Acute hepatitis A presents with jaundice, elevated liver enzymes, and anti-HAV IgM positivity. There is no specific treatment beyond supportive care, as it is self-limiting.
 
 
-11. **A) Neonatal hypoglycemia; administer IV dextrose**  
+**11. A) Neonatal hypoglycemia; administer IV dextrose**  
    *Explanation*: Neonates of diabetic mothers are prone to hypoglycemia due to hyperinsulinism. Symptoms include lethargy and tremors, and treatment is IV dextrose to restore normal blood glucose levels.
 
 
-12. **A) Renal cell carcinoma; nephrectomy**  
+**12. A) Renal cell carcinoma; nephrectomy**  
    *Explanation*: A flank mass, hematuria, and weight loss suggest renal cell carcinoma. Surgery (nephrectomy) is the mainstay of treatment in operable cases.
 
 
-13. **B) Abdominal ultrasound with Doppler**  
+**13. B) Abdominal ultrasound with Doppler**  
    *Explanation*: Ascites, jaundice, and elevated liver enzymes suggest liver cirrhosis. Ultrasound with Doppler helps assess liver structure, portal hypertension, and vascular flow.
 
 
-14. **A) Start non-invasive positive pressure ventilation**  
+**14. A) Start non-invasive positive pressure ventilation**  
    *Explanation*: The patient with COPD has acute hypercapnic respiratory failure (pH 7.30, PaCO2 58 mmHg). Non-invasive positive pressure ventilation (NPPV) helps improve gas exchange and reduce CO2 retention.
 
 
-15. **A) Levothyroxine**  
+**15. A) Levothyroxine**  
    *Explanation*: Elevated TSH and low free T4 indicate hypothyroidism. Levothyroxine is the standard treatment to replace deficient thyroid hormone.
 
 
@@ -342,3 +460,47 @@ I’ve compiled some of the most probable and frequently asked topics from past 
 **30. A) Desquamation of the skin on the hands and feet**  
    *Explanation*: Kawasaki disease is characterized by fever, mucocutaneous inflammation, and peeling of the skin on the hands and feet.
 
+**31. B) IM adrenaline (epinephrine)**  
+   *Explanation*: Anaphylactic shock is a medical emergency. IM adrenaline (epinephrine) is the first-line treatment to reverse vasodilation and bronchoconstriction.
+
+**32. B) Positive pressure ventilation (PPV)**  
+   *Explanation*: For a newborn with severe respiratory depression, PPV is critical for oxygenation and ventilation to restore breathing.
+
+**33. B) Endocarditis**  
+   *Explanation*: IV drug users are at high risk for infective endocarditis, particularly from organisms like Streptococcus viridans. A new heart murmur and positive blood cultures confirm the diagnosis.
+
+**34. B) Hypokalemia**  
+   *Explanation*: Hypokalemia increases the risk of digoxin toxicity by enhancing the drug’s effects on the myocardium, leading to arrhythmias.
+
+**35. D) Ruptured aneurysm**  
+   *Explanation*: A sudden severe headache with neck stiffness and blood in the subarachnoid space on CT indicates a ruptured aneurysm, the most common cause of subarachnoid hemorrhage.
+
+**36. B) Proteinuria > 3.5 g/day**  
+   *Explanation*: Nephrotic syndrome is characterized by heavy proteinuria, hypoalbuminemia, and edema, with proteinuria greater than 3.5 g/day being diagnostic.
+
+**37. B) High protein, low glucose**  
+   *Explanation*: Bacterial meningitis typically presents with elevated protein and decreased glucose levels in the CSF, along with a high white blood cell count.
+
+**38. B) To prevent platelet aggregation**  
+   *Explanation*: Clopidogrel is an antiplatelet drug that inhibits platelet aggregation, reducing the risk of thrombus formation following myocardial infarction.
+
+**39. B) Systemic lupus erythematosus (SLE)**  
+   *Explanation*: SLE is an autoimmune disease characterized by a malar rash, joint pain, and positive ANA and anti-dsDNA antibodies.
+
+**40. B) Human papillomavirus (HPV) vaccine**  
+   *Explanation*: The HPV vaccine is used to prevent infections from high-risk HPV strains, which are strongly associated with the development of cervical cancer.
+
+**41. C) Dietary modifications and exercise**  
+   *Explanation*: The first step in managing gestational diabetes is lifestyle modifications, including diet and exercise. Insulin is only started if glucose levels remain uncontrolled.
+
+**42. A) Retinal detachment**  
+   *Explanation*: Sudden painless vision loss described as a “curtain falling” is typical of retinal detachment, a medical emergency requiring immediate ophthalmologic intervention.
+
+**43. B) Hyperglycemia, ketonuria, and metabolic acidosis**  
+   *Explanation*: Diabetic ketoacidosis (DKA) is characterized by hyperglycemia, ketonuria, and an elevated anion gap metabolic acidosis, requiring urgent treatment.
+
+**44. A) Chvostek’s sign**  
+   *Explanation*: Chvostek’s sign is a clinical sign of hypocalcemia. It is elicited by tapping the facial nerve, causing twitching of facial muscles.
+
+**45. A) Croup**  
+   *Explanation*: Croup is characterized by a barking cough, stridor, and respiratory distress, typically caused by viral infection in young children.
