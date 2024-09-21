@@ -1,7 +1,3 @@
-Here is a set of highly complex, confusing, and challenging questions that cover diverse topics in the RRB Nursing syllabus, aimed at testing in-depth understanding for the upcoming 2024/2025 exams:
-
----
-
 ### 1. **A 65-year-old patient with a history of coronary artery disease presents with sudden severe chest pain that radiates to the back, hypotension, and a difference in blood pressure between the arms. What is the most likely diagnosis, and what is the immediate next step in management?**
    - A) Acute myocardial infarction; administer aspirin and nitrates  
    - B) Aortic dissection; initiate IV beta-blockers and prepare for surgery  
@@ -121,6 +117,129 @@ Here is a set of highly complex, confusing, and challenging questions that cover
    - D) Radioactive iodine therapy
 
 ---
+I’ve compiled some of the most probable and frequently asked topics from past RRB Nursing exams, based on trends observed from previous years. These questions are designed to challenge in-depth understanding of critical topics and concepts relevant to the 2024/2025 RRB Nursing exam.
+
+---
+
+### 16. **Which of the following conditions is characterized by a triad of fever, abdominal pain, and jaundice, often associated with cholangitis?**  
+   - A) Charcot's triad  
+   - B) Chvostek's sign  
+   - C) Trousseau's sign  
+   - D) Cullen's sign  
+
+---
+
+### 17. **A 24-year-old female presents with amenorrhea for 6 weeks, lower abdominal pain, and vaginal spotting. Her serum beta-hCG level is elevated, but a transvaginal ultrasound shows no intrauterine pregnancy. What is the most likely diagnosis?**  
+   - A) Ectopic pregnancy  
+   - B) Missed abortion  
+   - C) Hydatidiform mole  
+   - D) Ovarian cyst rupture  
+
+---
+
+### 18. **A patient with a history of mitral stenosis is experiencing exertional dyspnea, fatigue, and palpitations. An ECG shows atrial fibrillation. What is the most appropriate management?**  
+   - A) Beta-blocker and anticoagulation  
+   - B) Defibrillation  
+   - C) Calcium channel blocker and digoxin  
+   - D) IV diuretics and nitrates  
+
+---
+
+### 19. **Which of the following is the most appropriate intervention for a patient with diabetic ketoacidosis (DKA)?**  
+   - A) IV regular insulin  
+   - B) Subcutaneous insulin  
+   - C) Oral metformin  
+   - D) IV insulin glargine  
+
+---
+
+### 20. **A 45-year-old male presents with swelling in his right leg, redness, and pain, especially while walking. Duplex ultrasonography confirms the diagnosis of deep vein thrombosis (DVT). What is the first-line treatment?**  
+   - A) Thrombolysis  
+   - B) Aspirin  
+   - C) Heparin followed by warfarin  
+   - D) Surgical thrombectomy  
+
+---
+
+### 21. **In pediatric patients with febrile seizures, which of the following factors is considered a risk for recurrence?**  
+   - A) High-grade fever  
+   - B) Family history of epilepsy  
+   - C) Duration of the febrile illness  
+   - D) Age at the first febrile seizure  
+
+---
+
+### 22. **Which of the following vaccines is contraindicated in a pregnant woman?**  
+   - A) Hepatitis B vaccine  
+   - B) Influenza vaccine  
+   - C) Tetanus, diphtheria, and pertussis (Tdap)  
+   - D) Measles, mumps, and rubella (MMR) vaccine  
+
+---
+
+### 23. **A patient is undergoing preoperative assessment for elective surgery. His lab results show serum sodium of 127 mEq/L, and he has been on thiazide diuretics. What is the most appropriate management of his hyponatremia prior to surgery?**  
+   - A) Administer hypertonic saline  
+   - B) Restrict fluid intake  
+   - C) Discontinue thiazide diuretic and observe  
+   - D) Start oral sodium chloride tablets  
+
+---
+
+### 24. **A pregnant woman at 36 weeks of gestation presents with intense itching, particularly on her palms and soles, without any rash. Her liver function tests reveal elevated bile acids. What is the most appropriate treatment?**  
+   - A) Ursodeoxycholic acid  
+   - B) Topical corticosteroids  
+   - C) Antihistamines  
+   - D) Oral prednisone  
+
+---
+
+### 25. **A 60-year-old male with chronic hypertension is diagnosed with a thoracic aortic aneurysm. Which of the following is the definitive treatment for an aneurysm greater than 5.5 cm in diameter?**  
+   - A) Endovascular stent grafting  
+   - B) Antihypertensive therapy  
+   - C) Aspirin therapy  
+   - D) Watchful waiting  
+
+---
+
+### 26. **Which of the following is the most common type of ovarian tumor in women under 30 years of age?**  
+   - A) Serous cystadenoma  
+   - B) Dermoid cyst (teratoma)  
+   - C) Granulosa cell tumor  
+   - D) Mucinous cystadenoma  
+
+---
+
+### 27. **A patient who has just undergone a total hip replacement presents with acute onset of chest pain, dyspnea, and a drop in blood pressure. What is the most likely diagnosis?**  
+   - A) Pulmonary embolism  
+   - B) Myocardial infarction  
+   - C) Pneumothorax  
+   - D) Fat embolism  
+
+---
+
+### 28. **A newborn is noted to have a large, bulging fontanelle and widely spaced cranial sutures. What is the most likely underlying diagnosis?**  
+   - A) Hydrocephalus  
+   - B) Craniotabes  
+   - C) Craniosynostosis  
+   - D) Caput succedaneum  
+
+---
+
+### 29. **A 52-year-old female presents with difficulty swallowing both solids and liquids, along with unintentional weight loss. An esophageal biopsy reveals Barrett's esophagus. What is the next best step in management?**  
+   - A) Proton pump inhibitor (PPI) therapy  
+   - B) Endoscopic surveillance every 3 years  
+   - C) Endoscopic mucosal resection  
+   - D) Radiation therapy  
+
+---
+
+### 30. **Which of the following is a key feature of Kawasaki disease?**  
+   - A) Desquamation of the skin on the hands and feet  
+   - B) Generalized rash with central clearing  
+   - C) Violaceous papules on the face  
+   - D) Recurrent angioedema  
+
+---
 
 ### Answers and Explanations:
 
@@ -177,4 +296,49 @@ Here is a set of highly complex, confusing, and challenging questions that cover
 15. **A) Levothyroxine**  
    *Explanation*: Elevated TSH and low free T4 indicate hypothyroidism. Levothyroxine is the standard treatment to replace deficient thyroid hormone.
 
+
+**16. A) Charcot's triad**  
+   *Explanation*: Charcot's triad (fever, abdominal pain, and jaundice) is associated with cholangitis, an infection of the bile ducts often caused by gallstones.
+
+**17. A) Ectopic pregnancy**  
+   *Explanation*: An elevated beta-hCG level with no intrauterine pregnancy on ultrasound is highly suspicious for an ectopic pregnancy, a medical emergency.
+
+**18. A) Beta-blocker and anticoagulation**  
+   *Explanation*: Patients with mitral stenosis and atrial fibrillation should receive a beta-blocker to control heart rate and anticoagulation to prevent thromboembolism.
+
+**19. A) IV regular insulin**  
+   *Explanation*: Diabetic ketoacidosis is treated with IV regular insulin to lower blood glucose and correct the metabolic acidosis.
+
+**20. C) Heparin followed by warfarin**  
+   *Explanation*: DVT is managed with anticoagulation, starting with heparin for immediate effect, followed by warfarin for long-term prevention of clot formation.
+
+**21. B) Family history of epilepsy**  
+   *Explanation*: A family history of epilepsy is a known risk factor for the recurrence of febrile seizures in pediatric patients.
+
+**22. D) Measles, mumps, and rubella (MMR) vaccine**  
+   *Explanation*: Live vaccines, such as MMR, are contraindicated during pregnancy due to the risk of fetal infection.
+
+**23. C) Discontinue thiazide diuretic and observe**  
+   *Explanation*: Mild hyponatremia caused by thiazide diuretics often resolves after discontinuation of the drug. Observation is the appropriate management in asymptomatic patients.
+
+**24. A) Ursodeoxycholic acid**  
+   *Explanation*: Intrahepatic cholestasis of pregnancy presents with pruritus and elevated bile acids. Ursodeoxycholic acid is the treatment of choice to improve bile flow.
+
+**25. A) Endovascular stent grafting**  
+   *Explanation*: For thoracic aortic aneurysms greater than 5.5 cm, endovascular stent grafting is the definitive treatment to prevent rupture.
+
+**26. B) Dermoid cyst (teratoma)**  
+   *Explanation*: Dermoid cysts (teratomas) are the most common ovarian tumors in young women and are usually benign.
+
+**27. A) Pulmonary embolism**  
+   *Explanation*: Sudden onset chest pain and dyspnea following surgery is highly suggestive of a pulmonary embolism, which is a surgical complication.
+
+**28. A) Hydrocephalus**  
+   *Explanation*: Bulging fontanelles and widely spaced sutures in a newborn suggest increased intracranial pressure, most likely due to hydrocephalus.
+
+**29. A) Proton pump inhibitor (PPI) therapy**  
+   *Explanation*: Barrett's esophagus is treated with PPIs to prevent progression to esophageal adenocarcinoma, with endoscopic surveillance for dysplasia.
+
+**30. A) Desquamation of the skin on the hands and feet**  
+   *Explanation*: Kawasaki disease is characterized by fever, mucocutaneous inflammation, and peeling of the skin on the hands and feet.
 
