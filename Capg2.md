@@ -4,19 +4,18 @@
 4. The order of columns in Parquet files is not enforced, so the schema order can be different from the original schema when reading the data.
 5. You cannot change the contents of an existing Parquet file directly. To update or modify data, you typically need to create new Parquet files or overwrite existing ones. This often involves writing the updated data to new files and possibly deleting or archiving the old files.
 ---
-1.
-When we submit a Spark job using the spark-submit command, specifying YARN as the cluster manager.
-The YARN ResourceManager receives the job request and allocates resources (containers) to the Spark application.
-YARN launches a Spark ApplicationMaster (AM) in a container, which is responsible for managing the Spark job.
-The Spark ApplicationMaster requests resources (containers) from the ResourceManager based on the job's requirements.
-The ApplicationMaster starts Spark executors in containers on different nodes in the cluster.
-The Spark Driver converts the job into a Directed Acyclic Graph (DAG) of stages and tasks.
-The Driver schedules tasks and sends them to the executors.
-Executors execute the tasks and process the data. They shuffle data between tasks if necessary.
-Executors perform the data transformations and actions as defined in your Spark job.
-Intermediate data might be stored in memory (for faster access) or on disk if necessary.
-After all tasks are completed, the results are collected by the Driver.
-The ApplicationMaster deallocates resources and shuts down the executors.
+1. When we submit a Spark job using the spark-submit command, specifying YARN as the cluster manager.
+2. The YARN ResourceManager receives the job request and allocates resources (containers) to the Spark application.
+3. YARN launches a Spark ApplicationMaster (AM) in a container, which is responsible for managing the Spark job.
+4. The Spark ApplicationMaster requests resources (containers) from the ResourceManager based on the job's requirements.
+5. The ApplicationMaster starts Spark executors in containers on different nodes in the cluster.
+6. The Spark Driver converts the job into a Directed Acyclic Graph (DAG) of stages and tasks.
+7. The Driver schedules tasks and sends them to the executors.
+8. Executors execute the tasks and process the data. They shuffle data between tasks if necessary.
+9. Executors perform the data transformations and actions as defined in your Spark job.
+10. Intermediate data might be stored in memory (for faster access) or on disk if necessary.
+11. After all tasks are completed, the results are collected by the Driver.
+12. The ApplicationMaster deallocates resources and shuts down the executors.
 ---
 1. coalesce is better than repartition while decreasing the number of partitions because it does not involve a full shuffle of data across nodes. It just merges existing partitions.
 2. Client Mode: The Spark Driver runs on the machine where you submit the job (e.g., your laptop or a gateway node). The driver communicates with the cluster's executors remotely and the executors run on the cluster.
