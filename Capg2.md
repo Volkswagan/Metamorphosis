@@ -4,6 +4,7 @@
 4. The order of columns in Parquet files is not enforced, so the schema order can be different from the original schema when reading the data.
 5. You cannot change the contents of an existing Parquet file directly. To update or modify data, you typically need to create new Parquet files or overwrite existing ones. This often involves writing the updated data to new files and possibly deleting or archiving the old files.
 ---
+1.
 When we submit a Spark job using the spark-submit command, specifying YARN as the cluster manager.
 The YARN ResourceManager receives the job request and allocates resources (containers) to the Spark application.
 YARN launches a Spark ApplicationMaster (AM) in a container, which is responsible for managing the Spark job.
